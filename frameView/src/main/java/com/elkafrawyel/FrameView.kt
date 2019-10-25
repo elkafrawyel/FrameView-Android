@@ -52,7 +52,6 @@ public class FrameView : FrameLayout {
         internetView = inflater.inflate(R.layout.custom_view_network, null)
         networkText = internetView.findViewById(R.id.networkText)
 
-
         emptyView = inflater.inflate(R.layout.custom_view_empty, null)
         emptyText = emptyView.findViewById(R.id.emptyText)
 
