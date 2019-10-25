@@ -1,4 +1,4 @@
-package com.elkafrawyel.frameview
+package com.elkafrawyel
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -8,8 +8,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.FrameLayout
 import android.widget.TextView
-import android.widget.Toast
 import androidx.annotation.Nullable
+import com.elkafrawyel.frameview.R
 
 enum class CustomViews(val value: Int) {
     LAYOUT(0),
