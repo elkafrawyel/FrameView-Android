@@ -3,6 +3,7 @@ package com.elkafrawyel.frameview
 import android.annotation.SuppressLint
 import android.content.Context
 import android.util.AttributeSet
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.FrameLayout
@@ -105,7 +106,6 @@ public class FrameView : FrameLayout {
             }
         } else {
             hideAll()
-            Toast.makeText(context,"No layout view provided",Toast.LENGTH_LONG).show()
         }
     }
 
@@ -117,7 +117,13 @@ public class FrameView : FrameLayout {
                 it.visibility = View.GONE
             }
         } else {
-            Toast.makeText(context,"No layout view provided",Toast.LENGTH_LONG).show()
+            val views = arrayOf(emptyView, internetView, errorView, loadingView)
+
+            views.forEach {
+                it.visibility = View.GONE
+            }
+
+            Log.e("FrameView","No layout view provided")
         }
     }
 }
