@@ -18,7 +18,7 @@ enum class CustomViews(val value: Int) {
     LOADING(4),
 }
 
-class FrameView : FrameLayout {
+public class FrameView : FrameLayout {
 
     private lateinit var internetView: View
     private lateinit var emptyView: View
@@ -104,6 +104,7 @@ class FrameView : FrameLayout {
                 }
             }
         } else {
+            hideAll()
             Toast.makeText(context,"No layout view provided",Toast.LENGTH_LONG).show()
         }
     }

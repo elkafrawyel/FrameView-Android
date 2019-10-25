@@ -1,2 +1,2 @@
 include ':app', ':frameView'
-rootProject.name='FrameViewExample'
+rootProject.name='FrameViewProject'
