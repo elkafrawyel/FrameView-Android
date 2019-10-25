@@ -5,8 +5,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:gravity="center"
-    android:orientation="vertical"
-    android:theme="@style/AppTheme">
+    android:orientation="vertical">
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/noConnectionLav"
@@ -25,6 +24,7 @@
         android:drawablePadding="8dp"
         android:gravity="center"
         android:padding="8dp"
+        android:id="@+id/networkText"
         android:text="@string/internet_message"
         android:textAppearance="?attr/textAppearanceBody2"
         android:textColor="@android:color/darker_gray" />

@@ -27,6 +27,7 @@ public class FrameView : FrameLayout {
     private lateinit var loadingView: View
     private lateinit var emptyText: TextView
     private lateinit var errorText: TextView
+    private lateinit var networkText: TextView
     private var layoutView: View? = null
 
     constructor(context: Context) : super(context) {
@@ -49,6 +50,7 @@ public class FrameView : FrameLayout {
         val inflater = LayoutInflater.from(context)
 
         internetView = inflater.inflate(R.layout.custom_view_network, null)
+        networkText = internetView.findViewById(R.id.networkText)
         internetView.visibility = View.GONE
 
         emptyView = inflater.inflate(R.layout.custom_view_empty, null)
@@ -85,6 +87,14 @@ public class FrameView : FrameLayout {
 
     fun setErrorText(textId: Int) {
         errorText.text = context.getString(textId)
+    }
+
+    fun setNetworkText(textId: Int) {
+        networkText.text = context.getString(textId)
+    }
+
+    fun setNetworkText(text: String) {
+        networkText.text = text
     }
 
     fun retry(action: () -> Unit) {
