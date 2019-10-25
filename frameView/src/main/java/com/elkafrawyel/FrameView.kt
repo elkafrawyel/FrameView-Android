@@ -46,7 +46,6 @@ public class FrameView : FrameLayout {
 
     @SuppressLint("InflateParams")
     private fun init() {
-
         val inflater = LayoutInflater.from(context)
 
         internetView = inflater.inflate(R.layout.custom_view_network, null)
