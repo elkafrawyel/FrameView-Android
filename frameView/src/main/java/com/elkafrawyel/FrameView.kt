@@ -118,7 +118,7 @@ public class FrameView : FrameLayout {
         }
     }
 
-    fun hideAll() {
+    private fun hideAll() {
         if (layoutView != null) {
             val views = arrayOf(layoutView!!, emptyView, internetView, errorView, loadingView)
 
