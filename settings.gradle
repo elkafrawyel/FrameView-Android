@@ -1,0 +1,2 @@
+include ':app', ':frameView'
+rootProject.name='FrameViewExample'

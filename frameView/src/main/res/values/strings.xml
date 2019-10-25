@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">FrameView</string>
+    <string name="internet_message">Oops, No Internet Connection.\n click to retry</string>
+    <string name="error_message">Some error happened</string>
+    <string name="empty_message">Empty data</string>
+</resources>
