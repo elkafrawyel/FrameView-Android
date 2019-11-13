@@ -2,7 +2,6 @@ package com.elkafrawyel
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.elkafrawyel.frameview.R
 
 class MainActivity : AppCompatActivity() {
 

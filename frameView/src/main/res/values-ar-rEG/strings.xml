@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">FrameView</string>
+    <string name="library_app_name">FrameView</string>
     <string name="internet_message">"لا يوجد اتصال بالانترنت \n اضغط لاعادة المحاولة"</string>
     <string name="error_message">حدث خطأ ما</string>
     <string name="empty_message">لا توجد بيانات</string>
